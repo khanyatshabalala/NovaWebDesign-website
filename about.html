@@ -1,34 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NovaWeb Designs</title>
     <meta name="description" content="Innovative web solutions to help your brand shine online.">
     <meta name="author" content="Pythoneers">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="img/png" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" name="img/favicon" href="img/favicon.png">
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+    
+<header class="site-header">
+    <div class="container header-inner">
+        
+        <!-- Logo -->
+      <a class="brand" href="#" aria-label="NovaWeb Designs homepage">
+      <img src="images/favicon (3).png" alt="NovaWeb logo" class="logo" />
+        <span class="brand-text">
+          <span class="brand-name">NovaWeb</span>
+          <span class="brand-sub">DESIGNS</span>
+        </span>
+      </a>
 
-    </main>
+        <!-- Mobile Responsive -->
+      <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false">
+        <span class="menu-toggle-bar" aria-hidden="true"></span>
+        <span class="menu-toggle-bar" aria-hidden="true"></span>
+        <span class="menu-toggle-bar" aria-hidden="true"></span>
+        <span class="menu-toggle-label">Menu</span>
+      </button>
+
+        <!-- Navigation Bar -->
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link is-active">Home</a></li>
+          <li><a href="aboutus.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="contactus.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-header about-header">
+      <div class="container">
+        <h1>About NovaWeb Designs</h1>
+        <p>Your Partner in Crafting Stunning Digital Experiences</p>
+      </div>
+    </section>
+
+  <!-- WHO WE ARE -->
+  <section class="section" id="who-we-are">
+    <div class="container two-column">
+      <div>
+        <h2>Who We Are</h2>
+        <p>
+          NovaWeb Designs is a passionate collective of digital artisans, strategists, and developers united by a common goal: to transform visionary ideas into exceptional digital realities. Founded on the belief that every brand has a unique story to tell, we approach each project with fresh eyes and innovative thinking.
+        </p>
+        <p>
+          We're more than just a web design agency we're your creative partners, problem solvers, and digital advocates. Our team blends technical expertise with artistic vision to create websites that not only function flawlessly but also resonate emotionally with your audience.
+        </p>
+      </div>
+      <div>
+        <!-- You can add an image or illustration here about your team -->
+        <img src="img/team-placeholder.jpg" alt="NovaWeb Designs team collaborating" class="section-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE DO -->
+  <section class="section light-bg" id="what-we-do">
+    <div class="container two-column">
+      <div>
+        <!-- You can add an image or illustration here about your work -->
+        <img src="img/work-placeholder.jpg" alt="NovaWeb Designs creating digital solutions" class="section-image">
+      </div>
+      <div>
+        <h2>What We Do</h2>
+        <p>
+          We combine strategy, creativity, and clean development to build websites that are visually stunning and performance driven. Every website we build is designed with purpose, precision, and long‑term growth in mind.
+        </p>
+        <p>
+          From responsive web design and e-commerce solutions to brand strategy and digital marketing integration, we provide comprehensive services that ensure your online presence not only looks exceptional but also delivers measurable results.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION & VISION -->
+  <section class="section">
+    <div class="container two-column">
+      <div class="card">
+        <h3>Our Mission</h3>
+        <p>
+          We are committed to creating websites that do more than look good websites that are fast, user friendly, and built to support real business goals. Every project we take on is driven by a deep understanding of our clients' needs, their audience, and their long term vision.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Our Vision</h3>
+        <p>
+          We aim to be recognized for our creativity, reliability, and results-driven approach to web design. As technology evolves, we strive to stay ahead by continuously improving our skills, embracing innovation, and applying modern best practices.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="section light-bg">
+    <div class="container">
+      <h2 class="center">What Makes Us Different</h2>
+
+      <div class="grid">
+        <div class="value-card">
+          <h4>Custom Designs</h4>
+          <p>No templates – every website is tailored to your brand.</p>
+        </div>
+
+        <div class="value-card">
+          <h4>Performance Focused</h4>
+          <p>Fast, responsive, and optimized for all devices.</p>
+        </div>
+
+        <div class="value-card">
+          <h4>Client‑First</h4>
+          <p>Clear communication from start to finish.</p>
+        </div>
+
+        <div class="value-card">
+          <h4>Results‑Driven</h4>
+          <p>Designs that convert visitors into customers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <h2>Let's Build Your Online Presence</h2>
+      <p>Ready to work with a team that delivers results?</p>
+      <a href="contact.html" class="btn">Contact Us</a>
+    </div>
+  </section>
+</main>
+    <!--Footer-->
     <footer>
-
+           <div class="container footer-inner">
+      <div class="footer-content">
+        <div class="footer-section">
+      <a class="brand" href="#" aria-label="NovaWeb Designs homepage">
+      <img src="images/favicon (3).png" alt="NovaWeb logo" class="logo" />
+        <span class="brand-text">
+          <span class="brand-name">NovaWeb</span>
+          <span class="brand-sub">DESIGNS</span>
+        </span>
+          
+      </a>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>novawebdesigns200@gmail.com</p>
+          <p>(021) 123-4567</p>
+        </div>
+        <div class="footer-section">
+          <div class="social-links">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://x.com" target="_blank" aria-label="X (Twitter)">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+               
+      <div class="footer-bottom">
+        <p>&copy; 2026 NovaWeb Designs. All rights reserved. &reg;</p>
+      </div>
+    </div>
     </footer>
-    <script src="js/scripts.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/stars.js"></script>
 </body>
-
 </html>
-
