@@ -4,31 +4,36 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Services | NovaWeb Designs</title>
-  <link rel="stylesheet" href="img/service-style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <!-- NAVIGATION -->
-  <header class="navbar">
-    <div class="container nav-content">
+   
+   <header class="navbar">
+  <div class="container nav-content">
+
     <div class="logo">
       <a href="index.html">
-  <img src="Logo for NovaWeb Des.png" alt="NovaWeb Designs Logo">
-</a>
-</div>   <!-- ✅ THIS WAS MISSING -->
-<nav>
-  <a href="about.html">About</a>
-  <a href="services.html" class="active">Services</a>
-  <a href="contact.html">Contact</a>
-</nav>
-  </div>
+        <img src="Logos.png" alt="NovaWeb Designs Logo">
+      </a>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li> <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+</ul>
+    </nav> </div> 
 </header>
-
 <!-- HERO SECTION -->
   <section class="hero">
     <div class="container hero-content">
       <h1>Our Web Design Services</h1>
       <p>Professional, high-performance websites designed to help your business grow online.</p>
-      <a href="contact.html" class="btn-primary">Get a Free Consultation</a>
+      <a href="contactus.html" class="btn-primary">Get a Free Consultation</a>
     </div>
   </section>
 
@@ -116,11 +121,38 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container footer-content">
-      <p>© 2026 NovaWeb Designs. All rights reserved.</p>
+           <div class="container footer-inner">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>novawebdesigns200@gmail.com</p>
+          <p>(021) 123-4567</p>
+        </div>
+        <div class="footer-section">
+          <div class="social-links">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://x.com" target="_blank" aria-label="X (Twitter)">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+               
+      <div class="footer-bottom">
+        <p>&copy; 2026 NovaWeb Designs. All rights reserved. &reg;</p>
+      </div>
     </div>
+    </footer>
+    <script src="js/scripts.js"></script>
   </footer>
 
 </body>
 </html>
-
