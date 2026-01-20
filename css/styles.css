@@ -25,7 +25,7 @@ body {
   color: var(--text);
   background: var(--bg-deep);
   line-height: 1.6;
-  background-image: url('img/waves.png');
+  background-image: url('..img/waves.png');
   background-repeat: repeat;
   background-position: center;
   background-size: cover;
@@ -804,3 +804,4 @@ cite {
 .contact-form label span {
   font-weight: 400;
 }
+
