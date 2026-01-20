@@ -14,26 +14,39 @@
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <header>
+    
+<header class="site-header">
+    <div class="container header-inner">
         
-        <!--Mobile responsive -->
-        <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false">
+        <!-- Logo -->
+      <a class="brand" href="#" aria-label="NovaWeb Designs homepage">
+      <img src="img/Favicon.png" alt="NovaWeb logo" class="logo" />
+        <span class="brand-text">
+          <span class="brand-name">NovaWeb</span>
+          <span class="brand-sub">DESIGNS</span>
+        </span>
+      </a>
+
+        <!-- Mobile Responsive -->
+      <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false">
         <span class="menu-toggle-bar" aria-hidden="true"></span>
         <span class="menu-toggle-bar" aria-hidden="true"></span>
         <span class="menu-toggle-bar" aria-hidden="true"></span>
         <span class="menu-toggle-label">Menu</span>
       </button>
-        
-<!--Navigation Bar-->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+
+        <!-- Navigation Bar -->
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html#" class="nav-link is-active">Home</a></li>
+          <li><a href="aboutus.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="contactus.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
     
     <main id="main">
         
@@ -142,7 +155,6 @@
           <a href="services.html" class="btn btn-primary">EXPLORE OUR SERVICES</a>
         </div>
       </div>
-     </section>
 </section>
         
         <!--About Our Brand Section-->
@@ -235,6 +247,7 @@
 </body>
 
 </html>
+
 
 
 
