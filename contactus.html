@@ -3,51 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NovaWeb Designs</title>
+    <title>Contact Us | NovaWeb Designs</title>
     <meta name="description" content="Innovative web solutions to help your brand shine online.">
     <meta name="author" content="Pythoneers">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/contactus.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="icon" name="img/favicon" href="img/favicon.png">
+    <link rel="icon" name="img/favicon" href="img/favicon-removebg-preview.png">
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
     
-<header class="site-header">
-    <div class="container header-inner">
+    <header class="site-header">
+        <div class="container header-inner">
         
-        <!-- Logo -->
-      <a class="brand" href="#" aria-label="NovaWeb Designs homepage">
-      <img src="favicon-removebg-preview.png" alt="NovaWeb logo" class="logo" />
-        <span class="brand-text">
-          <span class="brand-name">NovaWeb</span>
-          <span class="brand-sub">DESIGNS</span>
-        </span>
-      </a>
+            <!-- Logo -->
+            <a class="brand" href="index.html" aria-label="NovaWeb Designs homepage">
+            <img src="img/favicon-removebg-preview.png" alt="NovaWeb logo" class="logo" />
+                <span class="brand-text">
+                <span class="brand-name">NovaWeb</span>
+                <span class="brand-sub">DESIGNS</span>
+                </span>
+            </a>
 
-        <!-- Mobile Responsive -->
-      <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false">
-        <span class="menu-toggle-bar" aria-hidden="true"></span>
-        <span class="menu-toggle-bar" aria-hidden="true"></span>
-        <span class="menu-toggle-bar" aria-hidden="true"></span>
-        <span class="menu-toggle-label">Menu</span>
-      </button>
+            <!-- Mobile Responsive -->
+            <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false">
+                <span class="menu-toggle-bar"></span>
+                <span class="menu-toggle-bar"></span>
+                <span class="menu-toggle-bar"></span>
+                <span class="menu-toggle-label">Menu</span>
+            </button>
 
         <!-- Navigation Bar -->
-      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
-        <ul class="nav-list">
-          <li><a href="index.html#" class="nav-link is-active">Home</a></li>
-          <li><a href="aboutus.html" class="nav-link">About</a></li>
-          <li><a href="services.html" class="nav-link">Services</a></li>
-          <li><a href="contactus.html" class="nav-link">Contact Us</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+            <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="aboutus.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="our-work.html" class="nav-link">Our Work</a></li>
+                    <li><a href="contactus.html" class="nav-link is-active">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <main>
+    <main id="main">
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
@@ -60,7 +62,9 @@
                             <h2>Let's Create Something Amazing Together!</h2>
                             <p>Ready to bring your vision to life? Drop us a message and let's get started!</p>
                         </div>
-                        <form id="contactForm">
+                        <form id="contactForm" name="contact" method="POST" data-netlify="true">
+                            <input type="hidden" name="form-name" value="contact">
+                            
                             <div class="form-group">
                                 <label>
                                     <span>Your Name</span>
@@ -87,13 +91,13 @@
         </section>
     </main>
 
-    <!--Footer-->
-    <footer>
-           <div class="container footer-inner">
+     <!--Footer-->
+      <footer class="site-footer">
+        <div class="container footer-inner">
       <div class="footer-content">
         <div class="footer-section">
-      <a class="brand" href="#" aria-label="NovaWeb Designs homepage">
-      <img src="img/Favicon.png" alt="NovaWeb logo" class="logo" />
+      <a class="brand" href="index.html" aria-label="NovaWeb Designs homepage">
+      <img src="img/favicon-removebg-preview.png" alt="NovaWeb logo" class="logo" />
         <span class="brand-text">
           <span class="brand-name">NovaWeb</span>
           <span class="brand-sub">DESIGNS</span>
@@ -103,8 +107,8 @@
         </div>
         <div class="footer-section">
           <h4>Contact</h4>
-          <p>novawebdesigns200@gmail.com</p>
-          <p>(021) 123-4567</p>
+          <p><i class="fa-solid fa-envelope"></i> <a href="mailto:novawebdesigns200@gmail.com">novawebdesigns200@gmail.com</a></p>
+          <p><i class="fa-solid fa-phone"></i> <a href="tel:+27211234567">(021) 123-4567</a></p>
         </div>
         <div class="footer-section">
           <div class="social-links">
@@ -130,6 +134,6 @@
     </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
