@@ -133,28 +133,29 @@
   </div>
 
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const form = document.getElementById("contactForm");
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contactForm");
 
-      form.addEventListener("submit", function (e) {
-        e.preventDefault(); // stop default redirect
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // stop default redirect
 
-        const data = new FormData(form);
+      const data = new FormData(form);
 
-        fetch("/", {
-          method: "POST",
-          body: data,
+      fetch("/", {
+        method: "POST",
+        body: data,
+      })
+        .then(() => {
+          alert("Your message has been sent!");
+          form.reset();
         })
-          .then(() => {
-            document.getElementById("successModal").style.display = "block";
-            form.reset();
-          })
-          .catch((error) => {
-            alert("Oops! Something went wrong.");
-            console.error(error);
-          });
-      });
+        .catch((error) => {
+          alert("Oops! Something went wrong.");
+          console.error(error);
+        });
     });
-  </script>
+  });
+</script>
 </body>
 </html>
+
