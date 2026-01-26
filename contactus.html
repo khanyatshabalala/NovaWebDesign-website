@@ -131,31 +131,34 @@
       <button onclick="document.getElementById('successModal').style.display='none'">Close</button>
     </div>
   </div>
-
   <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("contactForm");
-
-    form.addEventListener("submit", function (e) {
-      e.preventDefault(); // stop default redirect
-
-      const data = new FormData(form);
-
-      fetch("/", {
-        method: "POST",
-        body: data,
-      })
-        .then(() => {
-          alert("Your message has been sent!");
-          form.reset();
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("contactForm");
+  
+      form.addEventListener("submit", function (e) {
+        e.preventDefault(); // stop default redirect
+  
+        const data = new FormData(form);
+        const userName = form.querySelector("#name").value; // get the name field
+  
+        fetch("/", {
+          method: "POST",
+          body: data,
         })
-        .catch((error) => {
-          alert("Oops! Something went wrong.");
-          console.error(error);
-        });
+          .then(() => {
+            setTimeout(() => {
+              alert("Thank you, " + userName + "! Your message has been sent.");
+            }, 2000); // delay in milliseconds (2000 = 2 seconds)
+            form.reset();
+          })
+          .catch((error) => {
+            alert("Oops! Something went wrong.");
+            console.error(error);
+          });
+      });
     });
-  });
-</script>
+  </script>
 </body>
 </html>
+
 
